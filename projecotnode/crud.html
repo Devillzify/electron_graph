@@ -1,0 +1,74 @@
+<html>
+<head>
+    <link href="./crud.css" rel="stylesheet" />
+    <script src="./rendererCrud.js"></script>
+</head>
+
+<body>
+    <body>
+        <form class="row g-3" id="formulario">
+            <div class="col-12">
+              <label for="ProductCode" class="form-label">ProductCode</label>
+              <input type="text" class="form-control" id="ProductCode" placeholder="AMP1234">
+            </div>
+            <div class="col-12">
+              <label for="ProductName" class="form-label">ProductName</label>
+              <input type="text" class="form-control" id="ProductName" placeholder="Cochecoche">
+            </div>
+            <div class="col-md-6">
+              <label for="ProductLine" class="form-label">ProductLine</label>
+              <input type="text" class="form-control" id="ProductLine">
+            </div>
+            <div class="col-md-6">
+                <label for="ProductScale" class="form-label">ProductScale</label>
+                <input type="text" class="form-control" id="ProductScale">
+            </div>
+            <div class="col-md-4">
+              <label for="ProductVendor" class="form-label">ProductVendor</label>
+              <input type="text" class="form-control" id="ProductVendor">
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="ProductDescription" style="height: 100px"></textarea>
+                    <label for="ProductDescription">ProductDescription</label>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <label for="QuantityStock" class="form-label">Quantity</label>
+                <input type="number" class="form-control" id="QuantityStock">
+              </div>
+              <div class="col-md-4">
+                <label for="BuyPrice" class="form-label">Price</label>
+                <input type="number" class="form-control" id="BuyPrice">
+              </div>
+              <div class="col-md-4">
+                <label for="MSRP" class="form-label">MSRP</label>
+                <input type="number" class="form-control" id="MSRP">
+              </div>
+              <div class="col-md-4">
+                <label for="ImageURL" class="form-label">ImageURL</label>
+                <input type="text" class="form-control" id="ImageURL">
+              </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Insert Coche</button>
+            </div>
+          </form>
+
+        <table class="table table-dark table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Unit price</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="products"></tbody>
+            </tbody>
+        </table>
+    </body>
+</html>
